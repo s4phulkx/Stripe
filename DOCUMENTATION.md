@@ -14,3 +14,4 @@ was also used to mark a mapping for multiple values ​​and they are saved as 
 
 ## DTO
 1. PaymentDto.class: In this class we abstract three variables that would be amount, currency and description, we add ``@Getter`` and ``@Setter`` annotations. In currency we create the object from the created class PaymentCurrency.class.
+2. PaymentDto2.class: In this class we abstract the attributes of the Payment.class class, we add the ``@Setter`` and ``@Getter`` to them. We also create the ``fromString`` method with a string parameter, it converts a value to a string and return the value in string.
