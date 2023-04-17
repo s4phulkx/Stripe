@@ -1,7 +1,7 @@
 # Stripe: Payment Method
 [![GitHub Repo stars](https://img.shields.io/github/stars/lnxxxxxxxx/Stripe?style=social)](https://github.com/lnxxxxxxxx/Stripe/stargazers)
 
-## 💡 Get help - [Documentation](https://github.com/lnxxxxxxxx/Stripe/DOCUMENTATION.md)
+## 💡 Get help - [Documentation](./DOCUMENTATION.md)
 
 <hr/>
 
