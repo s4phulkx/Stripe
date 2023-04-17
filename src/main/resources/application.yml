@@ -12,5 +12,5 @@ stripe:
     base:
       url: https://api.stripe.com
   key:
-    public: 
-    secret: 
+    public: pk_test_51M
+    secret: sk_test_51M
