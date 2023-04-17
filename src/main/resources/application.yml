@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/java?useSSL=false
+    dbname: java
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+stripe:
+  api:
+    base:
+      url: https://api.stripe.com
+  key:
+    public: 
+    secret: 
