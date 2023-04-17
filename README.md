@@ -1,7 +1,7 @@
 # Stripe: Payment Method
-[![GitHub Repo stars](https://img.shields.io/github/stars/lnxxxxxxxx/stripe2?style=social)](https://github.com/lnxxxxxxxx/stripe2/stargazers)
+[![GitHub Repo stars](https://img.shields.io/github/stars/lnxxxxxxxx/Stripe?style=social)](https://github.com/lnxxxxxxxx/Stripe/stargazers)
 
-## 💡 Get help - [Documentation](https://github.com/lnxxxxxxxx/stripe2/discussions/categories/q-a)
+## 💡 Get help - [Documentation](https://github.com/lnxxxxxxxx/Stripe/DOCUMENTATION.md)
 
 <hr/>
 
@@ -45,10 +45,10 @@ To install Stripe, follow these steps:
 
 
 2. Clone the repository – For this step, you need to have Git installed. Alternatively,
-   you can download the [latest stable version] (https://github.com/lnxxxxxxxx/stripe2) (`Source code (zip)`, at the bottom of the page).
+   you can download the [latest stable version] (https://github.com/lnxxxxxxxx/Stripe) (`Source code (zip)`, at the bottom of the page).
 
     ```bash
-    git clone https://github.com/lnxxxxxxxx/stripe2.git
+    git clone https://github.com/lnxxxxxxxx/Stripe.git
     ```
 
 3. Open Stripe with IntelliJ Idea and wait for the dependencies to install.
