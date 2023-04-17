@@ -24,4 +24,10 @@ was also used to mark a mapping for multiple values ​​and they are saved as 
  ``payment.setDescription(paymentDto.getDescription());``
  
  ## Repository
- 1. PaymentRepository.interface: In this class, the ``@Repository`` annotation is used to detect that it will fulfill that function. It extends from JPA, within the parameters it is connected to the Payment class/entity, and the function of searching through a string for the stripe id was created.
+ 1. PaymentRepository.interface: In this interface, the ``@Repository`` annotation is used to detect that it will fulfill that function. It extends from JPA, within the parameters it is connected to the Payment class/entity, and the function of searching through a string for the stripe id was created.
+
+## Service
+1. IPaymentService.interface: This interface is for best practice, and is to be instantiated, springboot will know that the service methods will be called. Contains the three PaymentService methods.
+2. PaymentService.class: In this class we add the ``@Service`` annotation so that it is identified as such. The ``IPaymentService`` interface is implemented, 
+``@Value`` is used to call the variable containing the Stripe API Key, and a new variable is assigned. A service object and a service method are created.
+ - PaymentIntent: In this method, the variable that contains the API key Stripe is called. A string array is created to put the types of payment methods, a ``"card"`` is created inside, the passed parameters are mapped, ``"amount"``, ``"currency"``, ``"description"`` and ``"payment_method_types"`` and a token is created. In the same method I create an object of the ``PaymentDto2.class`` class and I set the status, the Date and the Stripe id, I also set the Amount, Currency, and Description, it is mapped and the toModel method is called and returns a response in json with the token.
