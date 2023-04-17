@@ -79,8 +79,20 @@ All the data will be saved in the database and it will remain as Pending Payment
 In the id you must put the previous ID and send the POST request, confirmed the payment will be made successfully and it will be updated in the Date and Successful Payment database.
    3. In the third endpoint ``payment/cancel/{id}`` put the aforementioned ID, POST request, and the payment will be canceled, updating the data as Cancelled.
    
-## Run tests
+## 🔎 Run tests
 
 It only has one test currently, it is controller, it is done to validate the requests.
-[Documentation](https://github.com/lnxxxxxxxx/stripe2/discussions/categories/q-a)
+This code uses the ``@RunWith(MockitoJUnitRunner.class)`` annotation to indicate that Mockito functions will be used in tests, and the `@InjectMocks` and `@Mock` objects to inject the necessary mocks.
+
+The init() method sets up the mockMvc object that will be used to make mock HTTP requests.
+
+The three tests are defined below:
+
+1. paymentTest() – Simulates a request to create a PaymentIntent via POST to `/paymentintent` and verifies that an HTTP 200 response is received and that the JSON of the response contains the expected values.
+
+2. confirmTest() – Simulates a PaymentIntent confirmation request by sending POST to `/confirm/{id}` and verifies that an HTTP 200 response is received and that the JSON of the response contains the expected values.
+
+3. cancelTest() – Simulates a request to cancel a PaymentIntent by sending POST to `/cancel/{id}` and verifies that an HTTP 200 response is received and that the JSON of the response contains the expected values.
+
+In each test, Mockito's when() function is used to indicate what value the mock should return.
 
