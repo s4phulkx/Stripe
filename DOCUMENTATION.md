@@ -12,4 +12,5 @@ And in each tribute a column ``@Column(name = "")`` is assigned to it. ``@Enumer
 was also used to mark a mapping for multiple values ​​and they are saved as a string in the database.
 2. PaymentCurrency.class: In this class the class that maps the currency values is created to have a better dependency injection.
 
-##
+## DTO
+1. PaymentDto.class: In this class we abstract three variables that would be amount, currency and description, we add ``@Getter`` and ``@Setter`` annotations. In currency we create the object from the created class PaymentCurrency.class.
